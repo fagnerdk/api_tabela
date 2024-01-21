@@ -8,4 +8,5 @@ const con= MYSQL.createConnection({
     port:'3306'
 })
 
+
 export {con}
