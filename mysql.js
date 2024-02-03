@@ -9,4 +9,4 @@ const con= MYSQL.createConnection({
 })
 
 
-export {con}
+//export {con}
