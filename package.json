@@ -1,7 +1,8 @@
 {
   "main": "api.js",
   "version": "1.0.0",
-  "description": "",
+  "description": "...",
+  "inStock": 8,
   "scripts": {
     "start": "node api"
   },
