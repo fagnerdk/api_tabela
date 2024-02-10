@@ -3,7 +3,7 @@ import mysql from 'mysql';
 var con = mysql.createConnection({
   host: "localhost",
   user: "root",
-  password: "Fagner1994@",
+  password: "",
   port:3306,
   database: "db_açoes",
   
