@@ -2,7 +2,7 @@
   "main": "api.js",
   "version": "1.0.0",
   "description": "",
-  "type": "module",
+ "type": "module",
   "scripts": {
     "start": "node api"
   },

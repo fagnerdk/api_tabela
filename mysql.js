@@ -1,16 +1,23 @@
-/*import MYSQL from 'mysql'
+import mysql from 'mysql';
 
-const con= MYSQL.createConnection({
-    host:'sql12.freesqldatabase.com',
-    user:'sql12678236',
-    password:'dNvljTKfZN',
-    database:'postgres://sxucupmn:hQVdBVQtIclLdW7Ot2p_FMRavAtc3mzI@tai.db.elephantsql.com/sxucupmn',
-    //port:'3306'
-})
-con.authenticate().then(()=>{console.log('conetado!')}).cathch(()=>{console.log('erro')})
-*/
-const con = []
+var con = mysql.createConnection({
+  host: "localhost",
+  user: "root",
+  password: "Fagner1994@",
+  port:3306,
+  database: "db_açoes",
+  
+});
 
 
 
 export {con}
+
+
+
+/*host: "dpg-cn2m5kmd3nmc739esg40-a",
+  user: "dbacoes_use",
+  password: "kYBubTiYbIGeBZY4OvevbamLi4RpjSDM",
+  port:5432,
+  database:"dbacoes",
+*/
