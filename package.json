@@ -1,16 +1,18 @@
 {
+  "type":"module",
   "main": "api.js",
   "version": "1.0.0",
   "description": "",
- "type": "module",
   "scripts": {
     "start": "node api"
   },
   "author": "",
   "license": "ISC",
-  
   "dependencies": {
     "express": "^4.18.2",
-    "googleapis": "^130.0.0"
+    "googleapis": "^130.0.0",
+    "pg": "^8.11.3",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.1"
   }
 }
