@@ -5,7 +5,7 @@ import express from "express";
 const app = express();
 
 import parser from "body-parser";
-import fs from 'fs'
+
 const urlencodedpase = parser.urlencoded({ extended: false });
 
 app.use(express.json());
@@ -13,12 +13,12 @@ var arry =[]
 app.get("/kaio", (req, res) => res.json(arry));
 
 app.get("/kaio2", (req, res) => {
-  
+  var t = localStorage.setItem("banco",req.query.nome )
   res.send(req.query.nome);
   const obj = req.query.nome; 
   arry.push({ pl: obj });
-  fs.writeFile("obj.json", JSON.stringify(obj, null, 2), (err) => {})
-  /*con.connect(function (err) {
+  
+  con.connect(function (err) {
     if (err) {
       throw err;
     }
@@ -29,7 +29,7 @@ app.get("/kaio2", (req, res) => {
       if (err) throw err;
       console.log("1 record inserted");
     });
-  });*/
+  });
 });
 
 
